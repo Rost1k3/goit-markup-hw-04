@@ -220,34 +220,55 @@ p {
    Advantages section
 ========================= */
 
+/* =========================
+   Advantages section
+========================= */
+
 .section-advantages {
   padding: 120px 0;
 }
 
-.title-advantages {
-  background-color: #f4f4fd;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: #2e2f42;
-}
-
 .advantages-list {
-  list-style: none;
-  font-size: 0;
-
   display: flex;
   gap: 24px;
   padding: 0;
   margin: 0;
-  justify-content: space-between;
 }
+
 
 .advantages-list-item {
   flex-basis: calc((100% - 72px) / 4);
+  position: relative;
+  padding-top: 112px; 
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
+
+.icon {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.advantages-icon {
+ display: flex;
+ justify-content: center;
+ vertical-align: center;
+ 
+
+  /* width: 190px;
+  height: 40px; */
+   
+
+  background-color: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+
+  fill: #2e2f42;
+  box-sizing: content-box;
+}
+
 
 .section-list {
   font-weight: 500;
@@ -258,26 +279,12 @@ p {
   margin-bottom: 8px;
 }
 
+
 .section-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-}
-
-.advantages-icon {
-  width: 250px;
-  height: 100px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: #f6f6ff;
-  border: 1.5px solid #9fa0b5;
-  border-radius: 10px;
-
-  margin-bottom: 10px;
 }
 
 /* =========================
@@ -432,9 +439,19 @@ p {
    Footer
 ========================= */
 
-.footer {
-  background-color: #2e2f42;
-  padding: 100px 0;
+.footer{
+  background-color:#2e2f42;
+  padding: 60px 0;     
+}  
+  .footer-container{
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 120px;
 }
 
 .logo {
@@ -463,24 +480,67 @@ p {
   max-width: 264px;
 }
 .footer-text-media{
+   color: #fff;
+  font-size: 14px;
+  margin-bottom: 16px;
+  font-size:"Roboto", sans-serif;
+  font-weight:500;
+  font-size:16px;
   
 }
+.footer-right{
+display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-left {
+  max-width: 264px;
+}  
 
 /* =========================
    Icons
 ========================= */
 
 .icon-social-media {
- width: 40px;
-  height: 40px; 
+   width: 40px;
+  height: 40px;
+  fill: #ffffff;
 }
-
+.footer-icon-social-media{
+    width: 31px;
+  height: 35px;
+  fill: #ffffff;}
 
 .icon-list {
   display: flex;
   margin-top: 5px;
   justify-content: space-between;
   width: 100%;
+  gap: 16px;
+  
+}
+.icon-list svg {
+  display: block; 
+}
+.footer-icon-list{
+ display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+ 
+  
+}
+.footer-icon-list li {
+   width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 
