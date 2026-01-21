@@ -107,7 +107,7 @@ p {
   color: #404bbf;
 }
 
-.nav-link:after {
+.nav-link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -123,7 +123,7 @@ p {
 }
 
 .nav-link:hover::after,
-.nav-link:active:after {
+.nav-link:active::after {
   transform: scaleX(1);
 }
 
@@ -173,7 +173,8 @@ p {
     url("../images/background-hero.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: cover;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .page-title {
@@ -220,10 +221,6 @@ p {
    Advantages section
 ========================= */
 
-/* =========================
-   Advantages section
-========================= */
-
 .section-advantages {
   padding: 120px 0;
 }
@@ -235,11 +232,10 @@ p {
   margin: 0;
 }
 
-
 .advantages-list-item {
   flex-basis: calc((100% - 72px) / 4);
   position: relative;
-  padding-top: 112px; 
+  padding-top: 112px;
 
   display: flex;
   flex-direction: column;
@@ -251,24 +247,18 @@ p {
   width: 100%;
   height: 100%;
 }
+
 .advantages-icon {
- display: flex;
- justify-content: center;
-
- 
-
-  /* width: 190px;
-  height: 40px; */
-   
+  display: block;
 
   background-color: #f4f4fd;
   border: 1px solid #8e8f99;
   border-radius: 4px;
 
-  fill: #2e2f42;
-  box-sizing: content-box;
+  box-sizing: border-box;
+  width: 264px;
+  height: 112px;
 }
-
 
 .section-list {
   font-weight: 500;
@@ -278,7 +268,6 @@ p {
   color: #2e2f42;
   margin-bottom: 8px;
 }
-
 
 .section-text {
   font-size: 16px;
@@ -439,11 +428,12 @@ p {
    Footer
 ========================= */
 
-.footer{
-  background-color:#2e2f42;
-  padding: 60px 0;     
-}  
-  .footer-container{
+.footer {
+  background-color: #2e2f42;
+  padding: 60px 0;
+}
+
+.footer-container {
   max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
@@ -479,38 +469,42 @@ p {
   letter-spacing: 0.02em;
   max-width: 264px;
 }
-.footer-text-media{
-   color: #fff;
-  font-size: 14px;
+
+.footer-text-media {
+  color: #fff;
   margin-bottom: 16px;
-  font-size:"Roboto", sans-serif;
-  font-weight:500;
-  font-size:16px;
-  
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
 }
-.footer-right{
-display: flex;
+
+.footer-right {
+  display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
 .footer-left {
   max-width: 264px;
-}  
+}
 
 /* =========================
    Icons
 ========================= */
 
 .icon-social-media {
-   width: 40px;
+  width: 40px;
   height: 40px;
   fill: #ffffff;
+  box-shadow: 0px 4px 6px rgba(46, 47, 66, 0.08),
+    0px 2px 4px rgba(46, 47, 66, 0.06);
 }
-.footer-icon-social-media{
-    width: 31px;
+
+.footer-icon-social-media {
+  width: 31px;
   height: 35px;
-  fill: #ffffff;}
+  fill: #ffffff;
+}
 
 .icon-list {
   display: flex;
@@ -518,31 +512,31 @@ display: flex;
   justify-content: space-between;
   width: 100%;
   gap: 16px;
-  
 }
+
 .icon-list svg {
-  display: block; 
+  display: block;
 }
-.footer-icon-list{
- display: flex;
+
+.footer-icon-list {
+  display: flex;
   gap: 16px;
   list-style: none;
   padding: 0;
   margin: 0;
- 
-  
 }
+
 .footer-icon-list li {
-   width: 40px;
+  width: 40px;
   height: 40px;
   background-color: #4d5ae5;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  box-shadow: 0px 4px 6px rgba(46, 47, 66, 0.08),
+    0px 2px 4px rgba(46, 47, 66, 0.06);
 }
-
 
 /* =========================
    Utilities
