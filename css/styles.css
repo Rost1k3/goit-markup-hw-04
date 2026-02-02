@@ -50,7 +50,10 @@ p {
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
-  box-shadow:0 10px 30px rgba(0, 0, 0, 0.18) ;
+   box-shadow:
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -99,7 +102,7 @@ p {
   text-decoration: none;
 
   position: relative;
-  transition: color cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -135,7 +138,7 @@ p {
 
 .nav-link-current {
   color: #404bbf;
-  transition: color cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -205,7 +208,9 @@ p {
 
     cursor: pointer;
     text-align: center;
-    box-shadow:0 10px 30px rgba(0, 0, 0, 0.18);
+    box-shadow:
+    0px 4px 4px rgba(0, 0, 0, 0.15),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 
     display: block;
     min-width: 169px;
@@ -242,7 +247,7 @@ p {
 .advantages-list-item {
   flex-basis: calc((100% - 72px) / 4);
   position: relative;
-  padding-top: 112px;
+  padding-top: 8px;
 
   display: flex;
   flex-direction: column;
@@ -270,8 +275,8 @@ p {
 }
 
 .advantages-icon{
-  width: 250px;          
-  height: 250x;
+  width: 64px;          
+  height: 64px;
   display: block;
 }
 
@@ -323,7 +328,7 @@ p {
 
 .team-list-item {
   background-color: #ffffff;
-  flex-basis: calc((100% - 3 * 24px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -401,6 +406,7 @@ p {
   position: absolute;
   top: 0;
   left: 0;
+  letter-spacing: 0.02em;
 
   width: 100%;
   height: 100%;
@@ -459,9 +465,12 @@ p {
   padding: 0 15px;
 
   display: flex;
-  justify-content: space-between;
   align-items: baseline;
   gap: 120px;
+}
+
+.footer-left {
+  max-width: 264px;
 }
 
 .logo {
@@ -480,33 +489,68 @@ p {
 
 .logo-part {
   color: #f4f4fd;
-  text-decoration: none;
 }
 
 .footer-text {
-  line-height: 1.5;
-  color: #f4f4fd;
-  letter-spacing: 0.02em;
-  max-width: 264px;
-}
-
-.footer-text-media {
-  color: #fff;
-  margin-bottom: 16px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
   font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
 }
 
 .footer-right {
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 
-.footer-left {
-  max-width: 264px;
+.footer-text-media {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
 }
+
+.footer-icon-list {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-icon-item {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-icon-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #4d5ae5;
+  color: #f4f4fd;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+  background-color: #31d0aa;
+}
+
+.footer-icon-link svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
 
 /* =========================
    Icons
@@ -516,8 +560,8 @@ p {
  fill: currentColor
 }
 .icon-link{
-   width: 64px;
-  height: 64px;
+   width: 40px;
+  height: 40px;
   background-color: #4d5ae5;
   border-radius: 50%;
 
@@ -541,7 +585,7 @@ p {
 .footer-icon-social-media {
   width: 64px;
   height: 64px;
-  fill: #ffffff;
+  fill: #f4f4fd;
 }
 
 .icon-list {
@@ -554,6 +598,8 @@ p {
 
 .icon-list svg {
   display: block;
+  width: 16px;
+  height: 16px;
 }
 
 .footer-icon-list {
