@@ -208,8 +208,8 @@ p {
     cursor: pointer;
     text-align: center;
     box-shadow:
-    0px 4px 4px rgba(0, 0, 0, 0.15),
-    0px 1px 6px rgba(46, 47, 66, 0.08);
+    0px 4px 4px rgba(0, 0, 0, 0.15);
+    
 
     display: block;
     min-width: 169px;
@@ -590,7 +590,6 @@ p {
 
 .icon-list {
   display: flex;
-  margin-top: 5px;
   width: 100%;
   gap: 24px;
 }
@@ -610,15 +609,6 @@ p {
 }
 
 
-.footer-icon-list  {
-  width: 40px;
-  height: 40px;
-  
-  
-  
-  
-   
-}
 .footer-icon-link {
   width: 40px;
   height: 40px;
@@ -629,8 +619,7 @@ p {
   justify-content: center;
 
   background-color: #4d5ae5;
-  color: #ffffff;
-
+  
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
