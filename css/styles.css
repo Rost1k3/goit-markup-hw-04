@@ -85,12 +85,9 @@ p {
 .nav-menu {
   display: flex;
   gap: 40px;
-}
-
-.nav-menu a {
-  display: block;
   padding: 24px 0;
 }
+
 
 
 .nav-link {
@@ -153,7 +150,7 @@ p {
   letter-spacing: 0.02em;
   color: #434455;
   text-decoration: none;
-  transition: #404bbf cubic-bezier(0.4, 0, 0.2, 1)  250ms;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-contacts:hover,
@@ -389,12 +386,14 @@ p {
   width: calc((100% - 48px) / 3);
   background-color: #fff;
 
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .portfolio-list-item:hover {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
   
 }
 
@@ -548,8 +547,6 @@ p {
 }
 
 .footer-icon-link svg {
-  width: 16px;
-  height: 16px;
   fill: currentColor;
 }
 
